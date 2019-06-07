@@ -5,6 +5,7 @@ I use `pug` and `scss` to create my `pdf` resume.
 ```bash
 git clone https://github.com/saeedseyfi/resume.git
 cd resume
+sudo npm i -g relaxedjs
 npm start # or `npm run make`
 ```
 
