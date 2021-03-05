@@ -5,39 +5,56 @@ style
 header#heading
     .info
         h1 Vahid Almasi
-        span Back-End/php Developer
+        span Back-End Developer
 
         .links
             ul
                 li
                     a(href='mailto:vahid.almasi.dev@gmail.com', target='_blank') #[+i('at')] vahid.almasi.dev@gmail.com
                 li
-                    a(href='tel:+989015644004', target='_blank') #[+i('phone')] +98 901 564 4004
+                    a(href='tel:+37253898472', target='_blank') #[+i('phone')] +372 53898472
                 li
                     +i('map-marker')
                     |
-                    | Rasht, Iran
+                    | Tallinn, Estonia
             ul
                 li
                     a(href='https://github.com/vahid-almasi', target='_blank') #[+i('github')] github.com/vahid-almasi
                 li
                     a(href='https://www.linkedin.com/in/vahidalmasi', target='_blank') #[+i('linkedin')] linkedin.com/in/vahidalmasi
 
-
-    .image
-        img(src='./avatar.jpg', width=120, height=120)
+//-     .image
+//-         img(src='./avatar.jpg', width=120, height=120)
 
 main
     article#content
         +block('Summary')
-            p An efficient reliable and competent PHP/Back-End developer with 5+ years of experience in web development with PHP programming and MVC frameworks such as Laravel and Lumen.
-            
+            p An efficient reliable and competent Back-End developer with 7+ years of experience in web development with PHP and frameworks such as Laravel and Lumen and Yii2.
+
         +block('Experience', false)
-            +job("PHP/Back-End Developer", "Freelancer", "", "03/2018 - Ongoing", "Rasht, Iran", false)
-                p Designed and developed WordPress websites and RESTful API services with best practice techniques.
+
+            +job("php/Back-End Developer", "Creditstar", "creditstar.com", "10/2019 - Ongoing", "Tallinn, Estonia", false)
+                p Creditstar is a leading international digital consumer finance company witch is provide service to hundreds of thousands of customers in 8 countries in Europe.
 
                 h4 Missions:
-                ul     
+                ul
+                    li Building scalable, secure and reusable feature.
+                    li Troubleshooting and solved complex problems.
+                    li Developing unit tests and acceptance test.
+                    li Monitoring the application for maximum stability and track performances with website monitoring tools.
+                    li Working with country managers and Admins to develop suite of web tools for internal users and customers.
+                    li Working closely with product team, data science team and business team to understand software requirements and develop best product for users and match with different countries law.
+
+                h4 Main projects:
+                    li Develop and updating product for 8 countries.
+                    li Improving acceptance test and unit test.
+                    li Developing APIs for data science team and brokers and third-party business.
+
+            +job("Software Developer", "Freelancer", "", "03/2018 - 10/2019", "Rasht, Iran", false)
+                p Designed and developed Web Application and RESTful API services with best practice techniques.
+
+                h4 Missions:
+                ul
                     li Collaborated with co-workers to establish backend conventions, principles, and patterns.
                     li Collaborated with cross-functional teams
                     li Collaborated with frontend developers to see projects through, from conception to completion
@@ -52,14 +69,13 @@ main
                     li Developed responsive content-based website with Wordpress that contain dynamic contents depending on users choice.
                     li Dockerize product for the run app on any infrastructure, quickly and reliably.
 
-            +job("Software Developer", "Anetwork", "https://anetwork.ir", "01/2016 - 03/2018", "Tehran, Iran")
+            +job("Back-End Developer", "Anetwork", "https://anetwork.ir", "01/2016 - 03/2018", "Tehran, Iran")
                 p Anetwork is one of Iran’s most successful Digital Media Agencies. The company was acquired by Adro (Iran's first ad exchange) in 2018.
 
                 h4 Missions:
                 ul
                     li Built reusable code and libraries for future use
                     li Optimized the application for maximum speed and scalability
-                    li Troubleshooted and solved complex problems
                     li Developed test drive/test first unit tests
                     li Worked closely with Designers, Customer Support and QA to develop suite of web tools for internal and external users
                     li Worked closely with product managers, editorial and business partners to understand software requirements
@@ -82,7 +98,7 @@ main
                     li Develop products for online businesses and groceries and content-based websites.
                     li Develop custom pordo CRM and CMS.
                 h4 Some projects I contributed in:
-                                    
+
                     li #[a(href="http://mayatowers.com/en") MAYA]: Construction Company, 
                     li #[a(href="http://narenjy.com") narenjy]: Sleeping accessories store, 
                     li #[a(href="http://apj.ir") Arya phosphoric]: One of the biggest acid phosphoric producer in iran Company, 
@@ -94,23 +110,24 @@ main
 
     aside#sidebar
         +block('Tools/Skills', false)
-            +rateItem('PHP', 'PHP 5.6/PHP 7', 9)
-            +rateItem('Version controllers', 'Git SCM/TortoiseCVS/...', 9)
-            +rateItem('Package manager', 'Composer/NPM', 9)
-            +rateItem('Testing', 'Functional Test/Unit-Test/Integration-Test, TDD and BDD frameworks', 9)
-            +rateItem('HTML5/CSS3/Javascript', '+ jQuery, HTML DOM, SASS/LASS, Gulp')
-            +rateItem('Software architectural style', 'SOA/RESTful API', 10)
-            +rateItem('Project Management Methodologies', 'Agile/Scrum', 10)
-            +rateItem('OOP/SOLID/PSR', null, 10)
-            +rateItem('OS', 'Linux/Windows', 10)
-
+            +rateItem('PHP', 'PHP 5.6/PHP 7.4', 9)
+            +rateItem('HTML5, CSS3, Javascript', '+ jQuery, HTML DOM, SASS/LASS, Gulp')
+            +rateItem('Dev tools', 'Docker, Vagrant, Ansible', 9)
+            +rateItem('Monitoring Tools', 'New Relic, Sentry', 9)
+            +rateItem('Version controllers', 'Git SCM, TortoiseCVS', 9)
+            +rateItem('Repository hosting service', 'GitHub, GitLab, Bitbucket', 9)
+            +rateItem('Testing', 'Functional Test, Unit-Test, Integration-Test, TDD and BDD frameworks', 9)
+            +rateItem('Project Management Methodologies', 'Agile, Scrum', 10)
+            +rateItem('Interested in languages', 'Python, GoLang', 10)
 
         +block('Conferences', false)
             +rateItem('Coder Conf 2', '07/2015', 10)
             +rateItem('Iran Web and Mobile Festival 10', '01/2016', 6)
             +rateItem('Integration Design', '09/2018', 6)
+            +rateItem('Hackatourism (As mentor)', '09/2019', 6)
 
         +block('Languages', false)
             +rateItem('English: Advanced', null, 6)
+            +rateItem('Estonian: Beginner', null, 6)
             +rateItem('Persian: Native', null, 10)
 
