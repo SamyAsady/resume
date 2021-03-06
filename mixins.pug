@@ -5,7 +5,10 @@ mixin block(title, boxed=true)
         block
 
 mixin i(icon)
-    i.fa(class=`fa-${icon}`)
+    i.fas(class=`fa-${icon}`)
+
+mixin i-fab(icon)
+    i.fab(class=`fa-${icon}`)
 
 mixin job(title, place, placeLink, dates, location, withAt=true)
     .block.boxed.job
